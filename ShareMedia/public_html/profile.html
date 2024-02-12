@@ -1,0 +1,64 @@
+<!--
+    Name: Gabe Barros
+    File description: profile.html is an HTML file that provides content to be displayed
+    on the profile page of the ShareMedia website. The page includes a header with the title of the
+    page and buttons that link to different pages, a sidebar with the user's username and
+    information, and a section for displaying text and photo posts. Javascript and css
+    files are linked.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&f
+    amily=Roboto:wght@300;400;500;900&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./profile.css">
+</head>
+<body>
+    <div id="header">
+        <button id="homeButton">Home</button>
+        <div id="headerContent">
+            <h1 id="title">ShareMedia</h1>
+        </div>
+        <button id="help">Help</button>
+    </div>
+    <div id="sidebar">
+        <button id="settings">Settings</button>
+        <h2 id="username">Username</h2>
+        <div>
+            <img src="imgs/blank-profile-picture-973460_960_720.webp" alt="pfp" id="pfp">
+        </div>
+        <div id="sidebarButtons">
+            <div>
+                <p id="posts">Posts: 0</p>
+            </div>
+            <div>
+                <p id="likes">Likes: 0</p>
+            </div>
+        </div>
+        <div id="bio">
+            <p></p>
+        </div>
+        <div id="interests">
+
+        </div>
+    </div>
+    <div id="mediaPosts">
+        <div class="mediaPost">
+            <h3>No posts yet!</h3>
+        </div>
+    </div>
+    <div id="textPosts">
+        <div class="textPost">
+            <h3>No posts yet!</h3>
+        </div>
+    </div>
+    <script src="./profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!--
+    Name: Gabe Barros
+    File description: home.html is an HTML file that provides content to be displayed
+    on the home page of the ShareMedia website. The page includes a header with the title of the
+    page and buttons that link to different pages, a sidebar with the user's username and links
+    to different pages, and a section for displaying text and photo posts. Javascript and css
+    files are linked.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&f
+    amily=Roboto:wght@300;400;500;900&family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <button id="logOut">Log Out</button>
+        <div id="headerContent">
+            <h1 id="title">ShareMedia</h1>
+        </div>
+        <button id="help">Help</button>
+    </div>
+    <div id="sidebar">
+        <h2 id="username">Username</h2>
+        <div>
+            <img src="imgs/blank-profile-picture-973460_960_720.webp" alt="pfp" id="pfp">
+        </div>
+        <div id="sidebarButtons">
+            <div>
+                <a id="profileLink" href="./profile.html">My Profile</a>
+            </div>
+            <div>
+                <a id="DMLink" href="./dmMain.html">Messages</a>
+            </div>
+            <div>
+                <a href="./create_post.html" id="createPost">Create Post</a>
+            </div>
+            <div>
+                <a href="./search.html" id="search">Search Users</a>
+            </div>
+        </div>
+    </div>
+    <div id="mediaPosts">
+        <div class="mediaPost">
+            <div class="noPost">
+                <h3>No posts yet!</h3>
+            </div>
+        </div>
+    </div>
+    <div id="textPosts">
+        <div class="textPost">
+            <div class="noPost">
+                <h3>No posts yet!</h3>
+            </div>
+        </div>
+    </div>
+    <script src="./home.js"></script>
+</body>
+</html>

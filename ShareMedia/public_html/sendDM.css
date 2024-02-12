@@ -1,0 +1,116 @@
+/*
+    Name: Gabe Barros & ZeYu Liu
+    File description: sendDM.css is a CSS file that provides styling for sendDM.html,
+    a file that provides the HTML content for the page for sending DMs for the ShareMedia website.
+    Stylistic changes are made such as adding background color to the page, adding padding 
+    and margin to elements, and adding a hover effect to the buttons.
+*/
+#header{
+    position: static;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color: #8E44AD;
+    z-index: 999;
+    text-overflow: ellipsis;
+}
+
+h1{
+    margin-top: 0;
+    padding-top: 10px;
+    font-family: 'Rubik', sans-serif;
+}
+
+#backButton{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    padding: 10px;
+    background-color: lightgray;
+    transition-duration: 0.4s;
+    border: 1px;
+    border-radius: 5px;
+}
+
+#backButton:hover {
+    background-color: grey;
+    color: white;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #D7DBDD;
+}
+
+#textDiv{
+    background-color: dimgray;
+    position: absolute;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+    text-align:center;
+}
+
+#pfp{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    margin-bottom: 5px;
+}
+
+#messageDiv{
+    position: absolute;
+    padding-top: 15px;
+    top: 60px;
+    width: 100%;
+    bottom: 150px;
+    height: 100% - 210px;
+    overflow-y: scroll;
+}
+
+.message{
+    display:flex;
+    margin-left: 30px;
+}
+
+.message p{
+    margin-left: 15px;
+    margin-top: 25px;
+}
+
+#textbox{
+    margin-top: 20px;
+    vertical-align: bottom;
+}
+
+.timestamp {
+    font-size: small;
+    color: gray;
+}
+
+#userNameInput{
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#sendButton{
+    vertical-align: bottom;
+}
+
+/* Search error message styling */
+#searchError {
+    font-family: 'Rubik', sans-serif;
+    margin-top: 10px;
+    color: red;
+    margin-left: 10px;
+    display: none; 
+}
+
+/* Profile picture styling in search error */
+#searchError img {
+    max-width: 50px; 
+    max-height: 50px; 
+    border-radius: 50%; 
+}

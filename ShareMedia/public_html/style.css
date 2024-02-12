@@ -1,0 +1,63 @@
+/*
+    Name: Gabe Barros
+    File description: style.css is a CSS file that provides styling for index.html,
+    a file that provides the HTML content for the login page of the ShareMedia website. 
+    Stylistic changes are made such as adding background color to the page, adding padding 
+    and margin to elements, and adding curvature to the main div.
+*/
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color:#8E44AD;
+}
+
+h1{
+    text-align: center;
+}
+
+#mainDiv{
+    font-family: 'Rubik', sans-serif;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    top: 7.5%;
+    left: 32.5%;
+    right: auto;
+    width: 35%;
+    height: 80%;
+    background-color: white;
+    border-radius: 25px;
+    overflow: auto;
+}
+
+#login{
+    padding: 5px;
+}
+
+input{
+    margin: 5px;
+    text-align: center;
+    padding: 5px;
+    width: 50%;
+}
+
+button {
+    font-family: 'Rubik', sans-serif;
+    margin: 10px;
+    padding: 5px;
+    border: 1px;
+    border-radius: 5px;
+    background-color: lightgray;
+    transition-duration: 0.4s;
+    width: 25%;
+  }
+  
+  button:hover {
+    background-color: grey;
+    color: white;
+  }
+
+hr{
+    width: 75%;
+}

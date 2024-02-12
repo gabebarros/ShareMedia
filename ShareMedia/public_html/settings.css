@@ -1,0 +1,103 @@
+/*
+    Name: Gabe Barros
+    File description: settings.css is a CSS file that provides styling for settings.html,
+    a file that provides the HTML content for the settings page of the ShareMedia website. 
+    Stylistic changes are made such as adding background color to the page, adding padding 
+    and margin to elements, and adding a hover effect to the buttons, as well as a border radius.
+*/
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color:lightgray;
+}
+
+body.dark-mode {
+    background-color: #333;
+}
+
+body.light-mode{
+    background-color: lightgray;
+}
+
+#sidebar{
+    font-family: 'Rubik', sans-serif;
+    position: fixed;
+    top: 0;
+    width: 30%;
+    height: 100%;
+    bottom: 0;
+    background-color:lightgray;
+    z-index: 888;
+    text-align: center;
+    display: block;
+    border-right: solid black 1px;
+}
+
+.setting{
+    display: block;
+    width: 90%;
+    margin: auto;
+    padding: 15px;
+    font-size: medium;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    transition-duration: 0.4s;
+    border: 0;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+#settingsDiv{
+    position: absolute;
+    left: 45%;
+    z-index: 999;
+    width: 40%;
+    top: 10%;
+    height: 80%;
+    background-color: #efefef;
+    border-radius: 25px;
+    text-align: center;
+}
+
+h2{
+    margin-top: 30px;
+    font-family: 'Rubik', sans-serif;
+}
+
+h3{
+    font-family: 'Rubik', sans-serif;
+}
+
+.innerSetting{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+#settingsDiv button{
+    font-family: 'Rubik', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 5px;
+    border: 1px;
+    border-radius: 5px;
+    background-color: lightgray;
+    transition-duration: 0.4s;
+    width: 25%;
+}
+
+#settingsDiv button:hover {
+    background-color: grey;
+    color: white;
+  }
+
+textarea{
+    margin: auto;
+    display: block;
+}

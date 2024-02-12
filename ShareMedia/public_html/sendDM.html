@@ -1,0 +1,43 @@
+<!--
+    Name: Gabe Barros, Zeyu Liu
+    File description: sendDM.html is an HTML file that provides content to be displayed
+    on the sending DM of the ShareMedia website. The page includes a header with a search bar
+    and button, a main section where the messages populate, and a bottom section with a textbox 
+    and send button. Javascript and css files are linked.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send a Message</title>
+    
+    <!-- Google fonts and external CSS stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Roboto:wght@300;400;500;900&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sendDM.css">
+</head>
+<body>
+    <div id="header">
+        <button id="backButton">Back</button>
+        <div id="headerContent">
+            <input type="text" id="userNameInput" placeholder="Enter name to chat with" />
+            <div id="searchError" style="display: none;">user not found</div>
+        </div>
+    </div>   
+
+    <div id="messageDiv">
+        <div class="message">
+           
+        </div>
+    </div>
+    <div id="textDiv">
+        <textarea name="textbox" id="textbox" cols="30" rows="6"></textarea>
+        <button id="sendButton">Send</button>
+    </div>
+
+    <script src="./sendDM.js"></script>
+</body>
+</html>

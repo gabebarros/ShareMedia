@@ -1,0 +1,55 @@
+<!--
+    Name: Gabe Barros
+    File description: index.html is an HTML file that provides content to be displayed
+    on the login page of the ShareMedia website. Different input fields are created for logging
+    in and creating a user. A blank div is created to display any error messages with logging in/
+    creating an account. Javascript and css files are linked.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&
+family=Roboto:wght@300;400;500;900&family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="mainDiv">
+        <h1 id="title">ShareMedia</h1>
+        <div id="login">
+            <h2>Login</h2>
+            <div id="innerDiv">
+                <input type="text" id="loginUsername" placeholder="Username">
+            </div>
+            <div>
+                <input type="password" id="loginPassword" placeholder="Password">
+            </div>
+            <div id="errorLogin"></div>
+            <button id="loginButton">Login</button>
+        </div>
+        <hr>
+        <div id="createAccount">
+            <h2>Create Account</h2>
+            <div>
+                <input type="text" id="createAccUsername" placeholder="Username">
+            </div>
+            <div>
+                <input type="password" id="createAccPassword" placeholder="Password (Must be 8 characters)">
+            </div>
+            <div>
+                <input type="password" id="confirmPassword" placeholder="Confirm Password">
+            </div>
+            <div id="errorCreateAcc">
+
+            </div>
+            <button id="createAccButton">Create Account</button>
+        </div>
+    </div>
+    <script src="./login.js"></script>
+</body>
+</html>

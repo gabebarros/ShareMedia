@@ -1,0 +1,35 @@
+<!--
+    Name: Gabe Barros
+    File description: create_post.html is an HTML file that provides content to be displayed
+    on the create post section of the ShareMedia website. The page has one main section with
+    input fields for adding text/ photo to your post. Buttons are created to post or go back
+    to the home page. Javascript and css files are linked.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&
+    family=Roboto:wght@300;400;500;900&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./create_post.css">
+</head>
+<body>
+    <div id="mainDiv">
+        <h1>Share a post</h1>
+        <h3>Select Image (optional): </h3>
+        <form enctype="multipart/form-data" id="postForm">
+            <input type="file" accept="image/*" id="imageInput" name="photo">
+            <h3>What would you like to say?</h3>
+            <textarea name="text" id="postTextbox" cols="30" rows="10"></textarea>
+            <button id="cancel" type="button">Cancel</button>
+            <button id="postButton">Post</button>
+        </form>
+    </div>
+    <script src="./create_post.js"></script>
+</body>
+</html>

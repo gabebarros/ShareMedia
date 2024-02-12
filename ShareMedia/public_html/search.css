@@ -1,0 +1,183 @@
+/*
+    Name: Gabe Barros
+    File description: search.css is a CSS file that provides styling for search.html,
+    a file that provides the HTML content for the search page of the ShareMedia website. 
+    Stylistic changes are made such as adding background color to the page, adding padding 
+    and margin to elements, and adding a hover effect to the buttons. This page is stylistically
+    very similar to the profile page since they use a lot of the same elements.
+*/
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #D7DBDD;
+}
+
+body.dark-mode {
+    background-color: #333;
+}
+
+body.light-mode{
+    background-color: lightgray;
+}
+
+#search{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color: #8E44AD;
+    z-index: 999;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+
+h1{
+    margin: 10px;
+    font-family: 'Rubik', sans-serif;
+}
+
+#help{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+#sidebar{
+    font-family: 'Rubik', sans-serif;
+    position: fixed;
+    top: 60px;
+    width: 40%;
+    height: 100%;
+    bottom: 0;
+    background-color:white;
+    z-index: 888;
+    text-align: center;
+}
+
+#sidebar.dark-mode{
+    background-color: gray;
+}
+
+#sidebar.light-mode{
+    background-color: white;
+}
+
+#username{
+    margin-top: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+#pfp{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+#mediaPosts{
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    margin-left: 15px;
+    top: 60px;
+    width: 40%;
+    height: 100% - 60px;
+    overflow-y: auto;
+}
+
+.mediaPost{
+    background-color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.mediaPost.dark-mode{
+    background-color: gray;
+}
+
+.mediaPost.light-mode{
+    background-color: white;
+}
+
+#textPosts{
+    position: absolute;
+    bottom: 0;
+    left: 80%;
+    margin-left: 30px;
+    right: 15px;
+    top: 60px;
+    width: calc(20% - 45px);
+    height: calc(100% - 60px);
+    overflow-y: auto;
+}
+
+.textPost{
+    background-color: white;
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.textPost.dark-mode{
+    background-color: gray;
+}
+
+.textPost.light-mode{
+    background-color: white;
+}
+
+#back{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    padding: 10px;
+    background-color: lightgray;
+    transition-duration: 0.4s;
+    border: 1px;
+    border-radius: 5px;
+}
+
+#back:hover {
+    background-color: grey;
+    color: white;
+}
+
+#interests{
+    margin-top: 20px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: lightgray;
+    border-radius: 25px;
+    overflow: scroll;
+}
+
+#bio{
+    margin-top: 20px;
+}
+
+#searchButton{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: lightgray;
+    transition-duration: 0.4s;
+    border: 1px;
+    border-radius: 5px;
+}
+
+#searchButton:hover {
+    background-color: grey;
+    color: white;
+}
+
+#searchBar{
+    padding: 10px;
+    
+}
